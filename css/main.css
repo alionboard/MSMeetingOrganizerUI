@@ -1,0 +1,6 @@
+.clickable-row{
+    cursor: pointer;
+}
+p, .text-black{
+    color: black;
+}

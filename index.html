@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <title>MSoft Meeting</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar" class="active">
+            <h1><a href="index.html" class="logo">M.</a></h1>
+            <ul class="list-unstyled components mb-5">
+                <li>
+                    <a href="index.html"><span class="fa fa-list"></span>Toplantı Listesi</a>
+                </li>
+                <li>
+                    <a href="#" onclick="createMeeting()"><span class="fa fa-plus"></span>Yeni Kayıt</a>
+                </li>
+            </ul>
+
+            <div class="footer">
+                <p class="mb-0 text-white">
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                </p>
+                <p class="mt-0 text-white">
+                    Ali Mustafa Özbek
+                </p>
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+                </div>
+            </nav>
+            <div class="mb-4">
+                <h2 id="main-h2" class="d-inline">Toplantı Listesi</h2>
+                <div id="main-buttons" class="d-inline">
+
+                </div>
+            </div>
+            <hr>
+            <div id="main-div">
+                <table class="table table-hover table-sm" id="main-table">
+                    <thead>
+                        <tr>
+                            <th>Konu</th>
+                            <th>Tarih</th>
+                            <th>Başlangıç Saati</th>
+                            <th>Bitiş Saati</th>
+                            <th>Katılımcı Sayısı</th>
+                        </tr>
+                    </thead>
+                    <tbody id="main-table-body">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
