@@ -172,6 +172,7 @@ function editMeeting(id) {
 	$.ajax({
 		type: "get",
 		url: apiUrl + "api/Meetings/" + id,
+		data: { "formatDate": "false" },
 		success: function (response) {
 			$("#main-div").append(
 				'<form id="editMeetingForm">' +
@@ -183,7 +184,7 @@ function editMeeting(id) {
 				'                    </div>' +
 				'                    <div class="form-group">' +
 				'                        <label for="dateInput" class="text-black">Tarih</label>' +
-				'                        <input type="datetime-local" class="form-control" id="dateInput" name="date" value="' + response.date + '">' +
+				'                        <input type="datetime-local" class="form-control" id="dateInput" name="date" value="' + response.dateTime + '">' +
 				'                    </div>' +
 				'                    <div class="form-group">' +
 				'                        <label for="endTimeInput" class="text-black">Bitiş Saati</label>' +
