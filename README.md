@@ -1,5 +1,6 @@
-# MSMeetingOrganizerUI
-HTML&CSS&JS Bootstrap ve JQuery ile geliştirildi.
+# MeetingOrganizerUI
+HTML&CSS&JS Bootstrap ve JQuery ile geliştirildi.  
+Müşteriler ile yapılacak toplantıların kaydedilebileceği, güncellenebileceği ve silinebileceği bir tek sayfa uygulaması.
   
 ## Giriş ekranı ve Toplantı Listesi
 <img src='images/listOfMeetings.png' width='100%'>  
